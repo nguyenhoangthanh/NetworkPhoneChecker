@@ -96,6 +96,9 @@
     <Compile Include="ListContact.xaml.cs">
       <DependentUpon>ListContact.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ListNetwork.xaml.cs">
+      <DependentUpon>ListNetwork.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -113,6 +116,10 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Page Include="ListContact.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListNetwork.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -136,6 +143,62 @@
     <Content Include="Assets\image\LogoMobifone.jpg" />
     <Content Include="Assets\image\LogoNotfound.jpg" />
     <Content Include="Assets\image\LogoSfone.jpg" />
+    <Content Include="Assets\image\logotinh\Angiang.png" />
+    <Content Include="Assets\image\logotinh\Baccan.png" />
+    <Content Include="Assets\image\logotinh\Bacgiang.png" />
+    <Content Include="Assets\image\logotinh\Baclieu.png" />
+    <Content Include="Assets\image\logotinh\Bacninh.png" />
+    <Content Include="Assets\image\logotinh\Bentre.png" />
+    <Content Include="Assets\image\logotinh\Binhdinh.png" />
+    <Content Include="Assets\image\logotinh\Binhduong.png" />
+    <Content Include="Assets\image\logotinh\Binhphuoc.png" />
+    <Content Include="Assets\image\logotinh\Binhthuan.png" />
+    <Content Include="Assets\image\logotinh\Camau.png" />
+    <Content Include="Assets\image\logotinh\Cantho.png" />
+    <Content Include="Assets\image\logotinh\Caobang.png" />
+    <Content Include="Assets\image\logotinh\Daklak.png" />
+    <Content Include="Assets\image\logotinh\Daknong.png" />
+    <Content Include="Assets\image\logotinh\Dienbien.png" />
+    <Content Include="Assets\image\logotinh\Dongnai.png" />
+    <Content Include="Assets\image\logotinh\Dongthap.png" />
+    <Content Include="Assets\image\logotinh\Gialai.png" />
+    <Content Include="Assets\image\logotinh\Haiduong.png" />
+    <Content Include="Assets\image\logotinh\Hanam.png" />
+    <Content Include="Assets\image\logotinh\Hatinh.png" />
+    <Content Include="Assets\image\logotinh\Haugiang.png" />
+    <Content Include="Assets\image\logotinh\Hungyen.png" />
+    <Content Include="Assets\image\logotinh\Khanhhoa.png" />
+    <Content Include="Assets\image\logotinh\Kiengiang.png" />
+    <Content Include="Assets\image\logotinh\Kontum.png" />
+    <Content Include="Assets\image\logotinh\Laicahu.png" />
+    <Content Include="Assets\image\logotinh\Lamdong.png" />
+    <Content Include="Assets\image\logotinh\Langson.png" />
+    <Content Include="Assets\image\logotinh\Laocai.png" />
+    <Content Include="Assets\image\logotinh\Longan.png" />
+    <Content Include="Assets\image\logotinh\Namdinh.png" />
+    <Content Include="Assets\image\logotinh\Nghean.png" />
+    <Content Include="Assets\image\logotinh\Ninhbinh.png" />
+    <Content Include="Assets\image\logotinh\Ninhthuan.png" />
+    <Content Include="Assets\image\logotinh\Phuyen.png" />
+    <Content Include="Assets\image\logotinh\Quangbinh.png" />
+    <Content Include="Assets\image\logotinh\Quangnam.png" />
+    <Content Include="Assets\image\logotinh\Quangngai.png" />
+    <Content Include="Assets\image\logotinh\Quangninh.png" />
+    <Content Include="Assets\image\logotinh\Quangtri.png" />
+    <Content Include="Assets\image\logotinh\Socla.png" />
+    <Content Include="Assets\image\logotinh\Soctrang.png" />
+    <Content Include="Assets\image\logotinh\Tayninh.png" />
+    <Content Include="Assets\image\logotinh\Thaibinh.png" />
+    <Content Include="Assets\image\logotinh\Thainguyen.png" />
+    <Content Include="Assets\image\logotinh\Thanhhoa.png" />
+    <Content Include="Assets\image\logotinh\Thuathienhue.png" />
+    <Content Include="Assets\image\logotinh\Tiengiang.png" />
+    <Content Include="Assets\image\logotinh\Travinh.png" />
+    <Content Include="Assets\image\logotinh\Tuyenquang.png" />
+    <Content Include="Assets\image\logotinh\Vinglong.png" />
+    <Content Include="Assets\image\logotinh\Vinhphuc.png" />
+    <Content Include="Assets\image\logotinh\Vungtau.png" />
+    <Content Include="Assets\image\logotinh\Yenbai.png" />
     <Content Include="Assets\image\LogoVietnammobile.jpg" />
     <Content Include="Assets\image\LogoViettel.jpg" />
     <Content Include="Assets\image\LogoVinaphone.jpg" />

@@ -42,11 +42,21 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="Kiểm tra nhà mạng thuê bao" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
-            <Button Name="ListContact" Click="ListContact_Click" Content="Danh sách liên hệ"></Button>
+            <Grid Name="Layout">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button Name="ListContact" Grid.Column="0" Click="ListContact_Click" Content="Danh bạ" Foreground="White" Background="#03FEA2" BorderBrush="#03FEA2" ></Button>
+                <Button Name="ListNetwork" Grid.Column="1" Click="ListNetwork_Click" Content="Nhà mạng" Foreground="White" Background="#03FEA2" BorderBrush="#03FEA2" />
+            </Grid>
             <TextBlock Text="Nhập số điện thoại cần kiểm tra" Margin="12,0" Foreground="GreenYellow" />
-            <TextBox Name="txtPhoneNumber" InputScope="Number" TextChanged="txtPhoneNumber_TextChanged"/>
+            <TextBox Name="txtPhoneNumber" InputScope="Number" TextChanged="txtPhoneNumber_TextChanged" Foreground="Black" Background="White" BorderBrush="White"/>
             <TextBlock Text="hoặc" Foreground="GreenYellow" Margin="12,0" />
-            <Button Name="btnContact" Click="btnContact_Click" Content="Chọn từ danh bạ"/>
+            <Button Name="btnContact" Click="btnContact_Click" Content="Chọn từ danh bạ" Foreground="White" Background="#FF7A7A" BorderBrush="#FF7A7A" />
             <TextBlock Name="ResultTypeNetwork" TextAlignment="Center" Text="" FontSize="24" Foreground="Red" FontWeight="Bold" Margin="12,0"/>
             <Image Name="imgPhoneNetwork" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="12,0" />
         </StackPanel>
