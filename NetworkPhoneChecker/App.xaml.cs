@@ -8,7 +8,7 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using NetworkPhoneChecker.Resources;
 
-namespace PhoneApp1
+namespace NetworkPhoneChecker
 {
     public partial class App : Application
     {

@@ -20,7 +20,7 @@
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
     <XapFilename>NetworkPhoneChecker.xap</XapFilename>
     <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
-    <SilverlightAppEntry>PhoneApp1.App</SilverlightAppEntry>
+    <SilverlightAppEntry>NetworkPhoneChecker.App</SilverlightAppEntry>
     <ValidateXaml>true</ValidateXaml>
     <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
     <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
@@ -139,6 +139,9 @@
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\bgImage.jpg" />
+    <Content Include="Assets\image\call.png" />
+    <Content Include="Assets\image\LogoDienThoaiBan.jpg" />
     <Content Include="Assets\image\LogoGmobile.jpg" />
     <Content Include="Assets\image\LogoMobifone.jpg" />
     <Content Include="Assets\image\LogoNotfound.jpg" />
@@ -164,8 +167,10 @@
     <Content Include="Assets\image\logotinh\Gialai.png" />
     <Content Include="Assets\image\logotinh\Haiduong.png" />
     <Content Include="Assets\image\logotinh\Hanam.png" />
+    <Content Include="Assets\image\logotinh\Hanoi.png" />
     <Content Include="Assets\image\logotinh\Hatinh.png" />
     <Content Include="Assets\image\logotinh\Haugiang.png" />
+    <Content Include="Assets\image\logotinh\Hochiminh.png" />
     <Content Include="Assets\image\logotinh\Hungyen.png" />
     <Content Include="Assets\image\logotinh\Khanhhoa.png" />
     <Content Include="Assets\image\logotinh\Kiengiang.png" />
@@ -202,6 +207,7 @@
     <Content Include="Assets\image\LogoVietnammobile.jpg" />
     <Content Include="Assets\image\LogoViettel.jpg" />
     <Content Include="Assets\image\LogoVinaphone.jpg" />
+    <Content Include="Assets\image\NetworkPhoneChecker.jpg" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

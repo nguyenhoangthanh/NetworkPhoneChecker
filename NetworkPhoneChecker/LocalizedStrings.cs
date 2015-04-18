@@ -1,6 +1,6 @@
 ﻿using NetworkPhoneChecker.Resources;
 
-namespace PhoneApp1
+namespace NetworkPhoneChecker
 {
     /// <summary>
     /// Provides access to string resources.

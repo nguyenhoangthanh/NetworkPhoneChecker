@@ -14,7 +14,7 @@ using Windows.Phone.PersonalInformation;
 using Microsoft.Phone.UserData;
 
 
-namespace PhoneApp1
+namespace NetworkPhoneChecker
 {
     public partial class MainPage : PhoneApplicationPage
     {
@@ -419,7 +419,7 @@ namespace PhoneApp1
 
         private void ListContact_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/ListContact.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/ListContact.xaml?parameter=all", UriKind.Relative));
         }
         private void ListNetwork_Click(object sender, RoutedEventArgs e)
         {
