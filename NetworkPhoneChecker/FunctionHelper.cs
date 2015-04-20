@@ -57,7 +57,9 @@ namespace NetworkPhoneChecker
                 }
                 switch (fourfirstphonenumber)
                 {
-                    // số điện thoại bàn
+                    //số điện thoại bàn
+                    case "0236":
+                        return type == 0 ? "Dienthoaiban" : "Assets/image/image/logotinh/Danang.png";
                     case "0203":
                         return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Quangninh.png";
                     case "0204":
@@ -79,7 +81,7 @@ namespace NetworkPhoneChecker
                     case "0212":
                         return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Sonla.png";
                     case "0213":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Laichau.png";
+                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Laicahu.png";
                     case "0214":
                         return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Laocai.png";
                     case "0215":
@@ -114,8 +116,6 @@ namespace NetworkPhoneChecker
                         return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Thuathienhue.png";
                     case "0235":
                         return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Quangnam.png";
-                    case "0236":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Danang.png";
                     case "0237":
                         return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Thanhhoa.png";
                     case "0238":
