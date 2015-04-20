@@ -265,14 +265,14 @@ namespace NetworkPhoneChecker
                     case "0299":
                         return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Soctrang.png";
 					// số điện thoại bàn cũ
-					case "0210":
+					/*case "0210":
                         return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Phutho.png";
                     case "0211":
                         return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Vinhphuc.png";
                     case "0218":
                         return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Hoabinh.png";
                     case "0219":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Hagiang.png";
+                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Hagiang.png";*/
 					case "0230":
                         return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Dienbien.png";
                     case "0231":

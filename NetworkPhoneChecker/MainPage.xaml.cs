@@ -534,8 +534,7 @@ namespace NetworkPhoneChecker
                     ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Sóc Trăng";
                     imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Soctrang.png", UriKind.RelativeOrAbsolute));
                     break;
-				// số điện thoại bàn cũ - thêm tên tỉnh vào "Mã vùng/thuê bao tỉnh ... ";
-					case "0210":
+					/*case "0210":
                         ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Phutho.png", UriKind.RelativeOrAbsolute));
                     break;
@@ -544,91 +543,91 @@ namespace NetworkPhoneChecker
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Vinhphuc.png", UriKind.RelativeOrAbsolute));
                     break;
                     case "0218":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                    ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Hòa Bình ";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Hoabinh.png", UriKind.RelativeOrAbsolute));
                     break;
                     case "0219":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Hà Giang ";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Hagiang.png", UriKind.RelativeOrAbsolute));
-                    break;
+                    break;*/
 					case "0230":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Điện Biên";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Dienbien.png", UriKind.RelativeOrAbsolute));
                     break;
                     case "0231":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Lai Châu";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Laichau.png", UriKind.RelativeOrAbsolute));
                     break;
 					case "0240":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Bắc Giang";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Bacgiang.png", UriKind.RelativeOrAbsolute));
                     break;
                     case "0241":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Bắc Ninh ";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Bacninh.png", UriKind.RelativeOrAbsolute));
                     break;
 					case "0280":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Thái Nguyên ";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Thainguyen.png", UriKind.RelativeOrAbsolute));
                     break;
                     case "0281":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Bắc Cạn ";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Backan.png", UriKind.RelativeOrAbsolute));
                     break;
 					case "0320":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Hải Dương";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Haiduong.png", UriKind.RelativeOrAbsolute));
                     break;
                     case "0321":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Hưng Yên ";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Hungyen.png", UriKind.RelativeOrAbsolute));
                     break;
 					case "0350":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Nam Định ";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Namdinh.png", UriKind.RelativeOrAbsolute));
                     break;
                     case "0351":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Hà Nam ";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Hanam.png", UriKind.RelativeOrAbsolute));
                     break;
 					case "0500":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                    ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Đắk Lắk ";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Daklak.png", UriKind.RelativeOrAbsolute));
                     break;
                     case "0501":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                    ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Đắk Nông ";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Daknong.png", UriKind.RelativeOrAbsolute));
                     break;
 					case "0510":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Quảng Nam ";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Quangnam.png", UriKind.RelativeOrAbsolute));
                     break;
                     case "0511":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Đà Nẵng ";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Danang.png", UriKind.RelativeOrAbsolute));
                     break;
 					case "0650":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Bình Dương";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Binhduong.png", UriKind.RelativeOrAbsolute));
                     break;
                     case "0651":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Bình Phước";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Binhphuoc.png", UriKind.RelativeOrAbsolute));
                     break;
 					case "0710":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Cần Thơ ";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Cantho.png", UriKind.RelativeOrAbsolute));
                     break;
                     case "0711":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Hậu Giang";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Haugiang.png", UriKind.RelativeOrAbsolute));
                     break;
 					case "0780":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Cà Mau ";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Camau.png", UriKind.RelativeOrAbsolute));
                     break;
                     case "0781":
-                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh ";
+                        ResultTypeNetwork.Text = "Mã vùng/thuê bao tỉnh Bạc Liêu";
                         imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/logotinh/Baclieu.png", UriKind.RelativeOrAbsolute));
                     break;
                 // số điện thoại di động
