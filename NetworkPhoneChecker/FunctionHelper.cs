@@ -61,6 +61,7 @@ namespace NetworkPhoneChecker
                     case "0236":
                         return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Danang.png";
                     case "0203":
+                    case "033":   
                         return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Quangninh.png";
                     case "0204":
                         return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Bacgiang.png";
@@ -81,7 +82,7 @@ namespace NetworkPhoneChecker
                     case "0212":
                         return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Sonla.png";
                     case "0213":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Laicahu.png";
+                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Laichau.png";
                     case "0214":
                         return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Laocai.png";
                     case "0215":
