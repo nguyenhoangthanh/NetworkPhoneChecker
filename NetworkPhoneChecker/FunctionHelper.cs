@@ -144,8 +144,7 @@ namespace NetworkPhoneChecker
                     //số điện thoại bàn
                     case "0236":
                         return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Danang.png";
-                    case "0203":
-                    case "033":   
+                    case "0203":  
                         return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Quangninh.png";
                     case "0204":
                         return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Bacgiang.png";
