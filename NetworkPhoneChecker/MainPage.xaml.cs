@@ -36,15 +36,34 @@ namespace NetworkPhoneChecker
             try
             {
                 int length = phonenumber.Length;
-                if (length < 2)
+                bool status = false;
+                if(length >= 4)
+                {
+                	status = CheckFourNumber(phonenumber.Substring(0, 4));
+                	if(!status)
+                		status = CheckThreeNumber(phonenumber.Substring(0, 3);
+                	if(!status)
+                		status = CheckTwoNumber(phonenumber.Substring(0, 2);
+                }
+                else if(length = 3 && status == false)
+                {
+                	status = CheckThreeNumber(phonenumber.Substring(0, 3);
+                	if(!status)
+                		status = CheckTwoNumber(phonenumber.Substring(0, 2);
+                }
+                else if(length = 2 && status == false)
+                {
+                	status = CheckTwoNumber(phonenumber.Substring(0, 2);
+                }
+                else if (length < 2)
                 {
                     ResultTypeNetwork.Text = "Không nhận dạng được thuê bao";
                     imgPhoneNetwork.Source = new BitmapImage(new Uri(@"Assets/image/LogoNotfound.jpg", UriKind.RelativeOrAbsolute));
                     return;
                 }
-                if (CheckTwoNumber(phonenumber.Substring(0, 2)) == false)
-                    if (CheckThreeNumber(phonenumber.Substring(0, 3)) == false)
-                        CheckFourNumber(phonenumber.Substring(0, 4));
+                //if (CheckTwoNumber(phonenumber.Substring(0, 2)) == false)
+                  //  if (CheckThreeNumber(phonenumber.Substring(0, 3)) == false)
+                    //    CheckFourNumber(phonenumber.Substring(0, 4));
             }
             catch
             {
