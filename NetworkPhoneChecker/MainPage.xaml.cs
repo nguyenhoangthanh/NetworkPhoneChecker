@@ -41,19 +41,19 @@ namespace NetworkPhoneChecker
                 {
                 	status = CheckFourNumber(phonenumber.Substring(0, 4));
                 	if(!status)
-                		status = CheckThreeNumber(phonenumber.Substring(0, 3);
+                		status = CheckThreeNumber(phonenumber.Substring(0, 3));
                 	if(!status)
-                		status = CheckTwoNumber(phonenumber.Substring(0, 2);
+                		status = CheckTwoNumber(phonenumber.Substring(0, 2));
                 }
-                else if(length = 3 && status == false)
+                else if(length == 3 && status == false)
                 {
-                	status = CheckThreeNumber(phonenumber.Substring(0, 3);
+                	status = CheckThreeNumber(phonenumber.Substring(0, 3));
                 	if(!status)
-                		status = CheckTwoNumber(phonenumber.Substring(0, 2);
+                		status = CheckTwoNumber(phonenumber.Substring(0, 2));
                 }
-                else if(length = 2 && status == false)
+                else if(length == 2 && status == false)
                 {
-                	status = CheckTwoNumber(phonenumber.Substring(0, 2);
+                	status = CheckTwoNumber(phonenumber.Substring(0, 2));
                 }
                 else if (length < 2)
                 {
