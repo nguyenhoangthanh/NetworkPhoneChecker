@@ -170,6 +170,8 @@
     <Content Include="Assets\image\logotinh\Hanam.png" />
     <Content Include="Assets\image\logotinh\Hanoi.png" />
     <Content Include="Assets\image\logotinh\Hatinh.png" />
+    <Content Include="Assets\image\logotinh\Hoabinh.png" />
+    <Content Include="Assets\image\logotinh\Hagiang.png" />
     <Content Include="Assets\image\logotinh\Haugiang.png" />
     <Content Include="Assets\image\logotinh\Hochiminh.png" />
     <Content Include="Assets\image\logotinh\Hungyen.png" />
@@ -186,12 +188,13 @@
     <Content Include="Assets\image\logotinh\Ninhbinh.png" />
     <Content Include="Assets\image\logotinh\Ninhthuan.png" />
     <Content Include="Assets\image\logotinh\Phuyen.png" />
+    <Content Include="Assets\image\logotinh\Phutho.png" />
     <Content Include="Assets\image\logotinh\Quangbinh.png" />
     <Content Include="Assets\image\logotinh\Quangnam.png" />
     <Content Include="Assets\image\logotinh\Quangngai.png" />
     <Content Include="Assets\image\logotinh\Quangninh.png" />
     <Content Include="Assets\image\logotinh\Quangtri.png" />
-    <Content Include="Assets\image\logotinh\Socla.png" />
+    <Content Include="Assets\image\logotinh\Sonla.png" />
     <Content Include="Assets\image\logotinh\Soctrang.png" />
     <Content Include="Assets\image\logotinh\Tayninh.png" />
     <Content Include="Assets\image\logotinh\Thaibinh.png" />
