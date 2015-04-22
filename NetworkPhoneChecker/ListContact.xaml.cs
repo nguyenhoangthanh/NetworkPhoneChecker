@@ -46,8 +46,9 @@ namespace NetworkPhoneChecker
                     ContactCustom cc = new ContactCustom();
                     cc.name = con.DisplayName.ToString();
                     cc.namecus = ConvertVN(cc.name.ToLower());
-                    string[] temp = cpn.ToString().Split(' ');
-                    cc.phone = temp[0];
+                    cc.phone = cpn.ToString().Replace("+84", "0");
+                    Regex digitsOnly = new Regex(@"[^\d]");
+                    cc.phone = digitsOnly.Replace(cc.phone, "");
                     cc.type = FunctionHelper.CheckNetworkPhoneNumber(cpn.ToString(), 0);
                     cc.urlimgtype = FunctionHelper.CheckNetworkPhoneNumber(cpn.ToString(), 1);
                     if (NetWorkType == "all")

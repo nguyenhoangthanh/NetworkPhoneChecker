@@ -12,6 +12,7 @@ using System.Windows.Media.Imaging;
 using Microsoft.Phone.Tasks;
 using Windows.Phone.PersonalInformation;
 using Microsoft.Phone.UserData;
+using System.Text.RegularExpressions;
 
 
 namespace NetworkPhoneChecker
@@ -28,6 +29,9 @@ namespace NetworkPhoneChecker
         private void txtPhoneNumber_TextChanged(object sender, TextChangedEventArgs e)
         {
             string phonenumber = txtPhoneNumber.Text;
+            phonenumber = phonenumber.Replace("+84", "0");
+            Regex digitsOnly = new Regex(@"[^\d]");
+            phonenumber = digitsOnly.Replace(phonenumber, "");
             CheckPhoneNumber(phonenumber);
         }
 

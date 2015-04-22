@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace NetworkPhoneChecker
@@ -13,6 +14,9 @@ namespace NetworkPhoneChecker
         {
             try
             {
+                phonenumber = phonenumber.Replace("+84", "0");
+                Regex digitsOnly = new Regex(@"[^\d]");
+                phonenumber = digitsOnly.Replace(phonenumber, "");
                 int length = phonenumber.Length;
                 bool status = false;
                 if (length >= 4)

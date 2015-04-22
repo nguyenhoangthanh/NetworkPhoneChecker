@@ -147,8 +147,8 @@
     <Content Include="Assets\image\LogoNotfound.jpg" />
     <Content Include="Assets\image\LogoSfone.jpg" />
     <Content Include="Assets\image\logotinh\Angiang.png" />
-    <Content Include="Assets\image\logotinh\Baccan.png" />
     <Content Include="Assets\image\logotinh\Bacgiang.png" />
+    <Content Include="Assets\image\logotinh\Backan.png" />
     <Content Include="Assets\image\logotinh\Baclieu.png" />
     <Content Include="Assets\image\logotinh\Bacninh.png" />
     <Content Include="Assets\image\logotinh\Bentre.png" />
@@ -168,6 +168,7 @@
     <Content Include="Assets\image\logotinh\Gialai.png" />
     <Content Include="Assets\image\logotinh\Hagiang.png" />
     <Content Include="Assets\image\logotinh\Haiduong.png" />
+    <Content Include="Assets\image\logotinh\Haiphong.png" />
     <Content Include="Assets\image\logotinh\Hanam.png" />
     <Content Include="Assets\image\logotinh\Hanoi.png" />
     <Content Include="Assets\image\logotinh\Hatinh.png" />
@@ -204,7 +205,7 @@
     <Content Include="Assets\image\logotinh\Tiengiang.png" />
     <Content Include="Assets\image\logotinh\Travinh.png" />
     <Content Include="Assets\image\logotinh\Tuyenquang.png" />
-    <Content Include="Assets\image\logotinh\Vinglong.png" />
+    <Content Include="Assets\image\logotinh\Vinhlong.png" />
     <Content Include="Assets\image\logotinh\Vinhphuc.png" />
     <Content Include="Assets\image\logotinh\Vungtau.png" />
     <Content Include="Assets\image\logotinh\Yenbai.png" />
