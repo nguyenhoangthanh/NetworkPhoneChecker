@@ -8,216 +8,321 @@ namespace NetworkPhoneChecker
 {
     public class FunctionHelper
     {
+        public static string result = "";
         public static string CheckNetworkPhoneNumber(string phonenumber, int type)
         {
-            int length = phonenumber.Length;
-            if (length < 2)
+            try
             {
-                return type == 0 ? "Unknow" : "Assets/image/LogoNotfound.jpg";
-            }
-            else if (length < 3)
-            {
-                switch (phonenumber)
+                int length = phonenumber.Length;
+                bool status = false;
+                if (length >= 4)
                 {
-                    // số điện thoại bàn cũ
-                    case "04":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Hanoi.png";
-                    case "08":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Hochiminh.png";
+                    status = CheckFourNumber(phonenumber.Substring(0, 4),type);
+                    if (!status)
+                        status = CheckThreeNumber(phonenumber.Substring(0, 3), type);
+                    if (!status)
+                        status = CheckTwoNumber(phonenumber.Substring(0, 2), type);
                 }
-            }
-            else if (length < 4)
-            {
-                switch (phonenumber)
+                else if (length == 3 && status == false)
                 {
-                    // số điện thoại bàn cũ
-                    case "020":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Laocai.png";
-                    case "022":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Sonla.png";
-                    case "025":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Langson.png";
-                    case "026":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Caobang.png";
-                    case "027":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Tuyenquang.png";
-                    case "029":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Yenbai.png";
-                    case "030":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Ninhbinh.png";
-                    case "031":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Haiphong.png";
-                    case "033":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Quangninh.png";
-                    case "036":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Thaibinh.png";
-                    case "037":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Thanhhoa.png";
-                    case "038":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Nghean.png";
-                    case "039":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Hatinh.png";
-                    case "052":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Quangbinh.png";
-                    case "053":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Quangtri.png";
-                    case "054":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Thuathienhue.png";
-                    case "055":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Quangngai.png";
-                    case "056":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Binhdinh.png";
-                    case "057":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Phuyen.png";
-                    case "058":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Khanhhoa.png";
-                    case "059":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Gialai.png";
-                    case "060":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Kontum.png";
-                    case "061":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Dongnai.png";
-                    case "062":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Binhthuan.png";
-                    case "063":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Lamdong.png";
-                    case "064":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Vungtau.png";
-                    case "066":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Tayninh.png";
-                    case "067":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Dongthap.png";
-                    case "068":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Ninhthuan.png";
-                    case "070":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Vinhlong.png";
-                    case "071":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Binhphuoc.png";
-                    case "072":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Longan.png";
-                    case "073":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Tiengiang.png";
-                    case "074":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Travinh.png";
-                    case "075":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Bentre.png";
-                    case "076":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Angiang.png";
-                    case "077":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Kiengiang.png";
-                    case "079":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Soctrang.png";
-                    // SĐT di động
-                    case "090":
-                    case "093":
-                        return type == 0 ? "Mobifone" : "Assets/image/LogoMobifone.jpg";
-                    case "091":
-                    case "094":
-                        return type == 0 ? "Vinaphone" : "Assets/image/LogoVinaphone.jpg";
-                    case "092":
-                    case "018":
-                        return type == 0 ? "Vietnammobile" : "Assets/image/LogoVietnammobile.jpg";
-                    case "095":
-                        return type == 0 ? "Sfone" : "Assets/image/LogoSfone.jpg";
-                    case "096":
-                    case "097":
-                    case "098":
-                    case "016":
-                        return type == 0 ? "Viettel" : "Assets/image/LogoViettel.jpg";
-                    case "099":
-                    case "019":
-                        return type == 0 ? "Gmobile" : "Assets/image/LogoGmobile.jpg";
+                    status = CheckThreeNumber(phonenumber.Substring(0, 3),type);
+                    if (!status)
+                        status = CheckTwoNumber(phonenumber.Substring(0, 2), type);
+                }
+                else if (length == 2 && status == false)
+                {
+                    status = CheckTwoNumber(phonenumber.Substring(0, 2), type);
+                }
+                else if (length < 2)
+                {
+                    result = type == 0 ? "Unknow" : "Assets/image/LogoNotfound.jpg";
                 }
             }
-            else
+            catch
             {
-                string twofirstphonenumber = phonenumber.Substring(0, 2);
-                string threefirstphonenumber = phonenumber.Substring(0, 3);
-                string fourfirstphonenumber = phonenumber.Substring(0, 4);
-                switch (fourfirstphonenumber)
-                {
-                    // số điện thoại bàn cũ
-					case "0210":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Phutho.png";
-                    case "0211":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Vinhphuc.png";
-                    case "0218":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Hoabinh.png";
-                    case "0219":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Hagiang.png";
-					case "0230":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Dienbien.png";
-                    case "0231":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Laichau.png";
-					case "0240":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Bacgiang.png";
-                    case "0241":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Bacninh.png";
-					case "0280":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Thainguyen.png";
-                    case "0281":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Backan.png";
-					case "0320":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Haiduong.png";
-                    case "0321":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Hungyen.png";
-					case "0350":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Namdinh.png";
-                    case "0351":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Hanam.png";
-					case "0500":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Daklak.png";
-                    case "0501":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Daknong.png";
-					case "0510":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Quangnam.png";
-                    case "0511":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Danang.png";
-					case "0650":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Binhduong.png";
-                    case "0651":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Binhphuoc.png";
-					case "0710":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Cantho.png";
-                    case "0711":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Haugiang.png";
-					case "0780":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Camau.png";
-                    case "0781":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Baclieu.png";
-                    // số điện thoại di động
-                    case "0120":
-                    case "0122":
-                    case "0126":
-                    case "0128":
-                        return type == 0 ? "Mobifone" : "Assets/image/LogoMobifone.jpg";
-                    case "0123":
-                    case "0124":
-                    case "0125":
-                    case "0127":
-                    case "0129":
-                        return type == 0 ? "Vinaphone" : "Assets/image/LogoVinaphone.jpg";
-                    case "0188":
-                        return type == 0 ? "Vietnammobile" : "Assets/image/LogoVietnammobile.jpg";
-                    case "0199":
-                        return type == 0 ? "Gmobile" : "Assets/image/LogoGmobile.jpg";
-                }
-                switch (threefirstphonenumber)
-                {
-                    // số điện thoại viettel
-                    case "016":
-                        return type == 0 ? "Viettel" : "Assets/image/LogoViettel.jpg";
-                }
-                switch (twofirstphonenumber)
-                {
-                    // số điện thoại bàn cũ
-                    case "04":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Hanoi.png";
-                    case "08":
-                        return type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Hochiminh.png";
-                }
+                result = type == 0 ? "Unknow" : "Assets/image/LogoNotfound.jpg";
             }
-            return type == 0 ? "Unknow" : "Assets/image/LogoNotfound.jpg";
+            return result;
+        }
+
+        public static bool CheckTwoNumber(string phonenumber, int type)
+        {
+            bool flag = true;
+            switch (phonenumber)
+            {
+                // số điện thoại bàn cũ
+                case "04":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Hanoi.png";
+                    break;
+                case "08":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Hochiminh.png";
+                    break;
+                default:
+                    flag = false;
+                    result = type == 0 ? "Unknow" : "Assets/image/LogoNotfound.jpg";
+                    break;
+            }
+            return flag;
+        }
+
+        public static bool CheckThreeNumber(string phonenumber, int type)
+        {
+            bool flag = true;
+            switch (phonenumber)
+            {
+                // số điện thoại bàn cũ
+                case "020":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Laocai.png";
+                    break;
+                case "022":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Sonla.png";
+                    break;
+                case "025":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Langson.png";
+                    break;
+                case "026":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Caobang.png";
+                    break;
+                case "027":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Tuyenquang.png";
+                    break;
+                case "029":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Yenbai.png";
+                    break;
+                case "030":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Ninhbinh.png";
+                    break;
+                case "031":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Haiphong.png";
+                    break;
+                case "033":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Quangninh.png";
+                    break;
+                case "036":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Thaibinh.png";
+                    break;
+                case "037":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Thanhhoa.png";
+                    break;
+                case "038":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Nghean.png";
+                    break;
+                case "039":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Hatinh.png";
+                    break;
+                case "052":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Quangbinh.png";
+                    break;
+                case "053":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Quangtri.png";
+                    break;
+                case "054":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Thuathienhue.png";
+                    break;
+                case "055":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Quangngai.png";
+                    break;
+                case "056":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Binhdinh.png";
+                    break;
+                case "057":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Phuyen.png";
+                    break;
+                case "058":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Khanhhoa.png";
+                    break;
+                case "059":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Gialai.png";
+                    break;
+                case "060":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Kontum.png";
+                    break;
+                case "061":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Dongnai.png";
+                    break;
+                case "062":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Binhthuan.png";
+                    break;
+                case "063":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Lamdong.png";
+                    break;
+                case "064":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Vungtau.png";
+                    break;
+                case "066":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Tayninh.png";
+                    break;
+                case "067":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Dongthap.png";
+                    break;
+                case "068":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Ninhthuan.png";
+                    break;
+                case "070":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Vinhlong.png";
+                    break;
+                case "071":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Binhphuoc.png";
+                    break;
+                case "072":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Longan.png";
+                    break;
+                case "073":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Tiengiang.png";
+                    break;
+                case "074":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Travinh.png";
+                    break;
+                case "075":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Bentre.png";
+                    break;
+                case "076":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Angiang.png";
+                    break;
+                case "077":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Kiengiang.png";
+                    break;
+                case "079":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Soctrang.png";
+                    break;
+                // SĐT di động
+                case "090":
+                case "093":
+                    result = type == 0 ? "Mobifone" : "Assets/image/LogoMobifone.jpg";
+                    break;
+                case "091":
+                case "094":
+                    result = type == 0 ? "Vinaphone" : "Assets/image/LogoVinaphone.jpg";
+                    break;
+                case "092":
+                case "018":
+                    result = type == 0 ? "Vietnammobile" : "Assets/image/LogoVietnammobile.jpg";
+                    break;
+                case "095":
+                    result = type == 0 ? "Sfone" : "Assets/image/LogoSfone.jpg";
+                    break;
+                case "096":
+                case "097":
+                case "098":
+                case "016":
+                    result = type == 0 ? "Viettel" : "Assets/image/LogoViettel.jpg";
+                    break;
+                case "099":
+                case "019":
+                    result = type == 0 ? "Gmobile" : "Assets/image/LogoGmobile.jpg";
+                    break;
+                default:
+                    flag = false;
+                    result = type == 0 ? "Unknow" : "Assets/image/LogoNotfound.jpg";
+                    break;
+            }
+            return flag;
+        }
+
+        public static bool CheckFourNumber(string phonenumber, int type)
+        {
+            bool flag = true;
+            switch (phonenumber)
+            {
+                // số điện thoại bàn cũ
+                case "0210":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Phutho.png";
+                    break;
+                case "0211":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Vinhphuc.png";
+                    break;
+                case "0218":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Hoabinh.png";
+                    break;
+                case "0219":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Hagiang.png";
+                    break;
+                case "0230":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Dienbien.png";
+                    break;
+                case "0231":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Laichau.png";
+                    break;
+                case "0240":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Bacgiang.png";
+                    break;
+                case "0241":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Bacninh.png";
+                    break;
+                case "0280":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Thainguyen.png";
+                    break;
+                case "0281":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Backan.png";
+                    break;
+                case "0320":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Haiduong.png";
+                    break;
+                case "0321":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Hungyen.png";
+                    break;
+                case "0350":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Namdinh.png";
+                    break;
+                case "0351":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Hanam.png";
+                    break;
+                case "0500":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Daklak.png";
+                    break;
+                case "0501":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Daknong.png";
+                    break;
+                case "0510":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Quangnam.png";
+                    break;
+                case "0511":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Danang.png";
+                    break;
+                case "0650":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Binhduong.png";
+                    break;
+                case "0651":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Binhphuoc.png";
+                    break;
+                case "0710":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Cantho.png";
+                    break;
+                case "0711":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Haugiang.png";
+                    break;
+                case "0780":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Camau.png";
+                    break;
+                case "0781":
+                    result = type == 0 ? "Dienthoaiban" : "Assets/image/logotinh/Baclieu.png";
+                    break;
+                // số điện thoại di động
+                case "0120":
+                case "0122":
+                case "0126":
+                case "0128":
+                    result = type == 0 ? "Mobifone" : "Assets/image/LogoMobifone.jpg";
+                    break;
+                case "0123":
+                case "0124":
+                case "0125":
+                case "0127":
+                case "0129":
+                    result = type == 0 ? "Vinaphone" : "Assets/image/LogoVinaphone.jpg";
+                    break;
+                case "0188":
+                    result = type == 0 ? "Vietnammobile" : "Assets/image/LogoVietnammobile.jpg";
+                    break;
+                case "0199":
+                    result = type == 0 ? "Gmobile" : "Assets/image/LogoGmobile.jpg";
+                    break;
+                default:
+                    flag = false;
+                    result = type == 0 ? "Unknow" : "Assets/image/LogoNotfound.jpg";
+                    break;
+            }
+            return flag;
         }
     }
 }
