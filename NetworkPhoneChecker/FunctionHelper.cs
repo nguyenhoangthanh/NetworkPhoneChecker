@@ -303,6 +303,7 @@ namespace NetworkPhoneChecker
                     break;
                 // số điện thoại di động
                 case "0120":
+                case "0121":
                 case "0122":
                 case "0126":
                 case "0128":

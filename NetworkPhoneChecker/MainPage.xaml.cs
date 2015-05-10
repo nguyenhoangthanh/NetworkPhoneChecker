@@ -22,8 +22,9 @@ namespace NetworkPhoneChecker
         // Constructor
         public MainPage()
         {
+            //NavigationService.RemoveBackEntry();
             InitializeComponent();
-            //BuildLocalizedApplicationBar();            
+            BuildLocalizedApplicationBar();            
         }
 
         private void txtPhoneNumber_TextChanged(object sender, TextChangedEventArgs e)
@@ -399,6 +400,7 @@ namespace NetworkPhoneChecker
                     break;
                 // số điện thoại di động
                 case "0120":
+                case "0121":
                 case "0122":
                 case "0126":
                 case "0128":
@@ -473,13 +475,20 @@ namespace NetworkPhoneChecker
             ApplicationBar = new ApplicationBar();
 
             // Create a new button and set the text value to the localized string from AppResources.
-            ApplicationBarIconButton appBarButton = new ApplicationBarIconButton(new Uri("/Assets/AppBar/appbar.add.rest.png", UriKind.Relative));
-            appBarButton.Text = AppResources.AppBarButtonText;
-            ApplicationBar.Buttons.Add(appBarButton);
+            //ApplicationBarIconButton appBarButton = new ApplicationBarIconButton(new Uri("/Assets/AppBar/appbar.add.rest.png", UriKind.Relative));
+            //appBarButton.Text = AppResources.AppBarButtonText;
+            //ApplicationBar.Buttons.Add(appBarButton);
 
             // Create a new menu item with the localized string from AppResources.
             ApplicationBarMenuItem appBarMenuItem = new ApplicationBarMenuItem(AppResources.AppBarMenuItemText);
+            appBarMenuItem.Text = "Giới thiệu";
             ApplicationBar.MenuItems.Add(appBarMenuItem);
+            appBarMenuItem.Click += appBarMenuItem_Click;
+        }
+
+        void appBarMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Introduce.xaml", UriKind.Relative));
         }
     }
 }

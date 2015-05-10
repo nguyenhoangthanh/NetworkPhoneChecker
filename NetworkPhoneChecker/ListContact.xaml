@@ -27,7 +27,7 @@
             <TextBlock Text="Danh sách liên hệ" FontSize="24" Style="{StaticResource PhoneTextNormalStyle}"/>
         </StackPanel>
         <StackPanel Grid.Row="1">
-            <TextBox Name="txtPhoneSeachNumber" Text="Nhập số điện thoại hoặc tên" TextChanged="txtPhoneSeachNumber_TextChanged" LostFocus="txtPhoneSeachNumber_LostFocus" GotFocus="txtPhoneSeachNumber_GotFocus" Foreground="Black" Background="White" BorderBrush="White" />
+            <TextBox Name="txtPhoneSeachNumber" Text="Nhập số điện thoại hoặc tên" TextChanged="txtPhoneSeachNumber_TextChanged" LostFocus="txtPhoneSeachNumber_LostFocus" GotFocus="txtPhoneSeachNumber_GotFocus" Foreground="#A4A4A4" Background="White" BorderBrush="White" />
         </StackPanel>
         <ListBox Name="Contact" Grid.Row="2" MaxWidth="480">
             <ListBox.ItemTemplate>

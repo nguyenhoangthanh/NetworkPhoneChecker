@@ -89,10 +89,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Animation.xaml.cs">
+      <DependentUpon>Animation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="FunctionHelper.cs" />
+    <Compile Include="Introduce.xaml.cs">
+      <DependentUpon>Introduce.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ListContact.xaml.cs">
       <DependentUpon>ListContact.xaml</DependentUpon>
     </Compile>
@@ -109,12 +115,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="YourUriMapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="Animation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Introduce.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ListContact.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -213,6 +228,8 @@
     <Content Include="Assets\image\LogoViettel.jpg" />
     <Content Include="Assets\image\LogoVinaphone.jpg" />
     <Content Include="Assets\image\NetworkPhoneChecker.jpg" />
+    <Content Include="Assets\ms-logo.png" />
+    <Content Include="SplashScreenImage.jpg" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
